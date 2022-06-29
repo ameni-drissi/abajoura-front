@@ -1,0 +1,137 @@
+<header class="main-header">
+    <nav class="nab vbar-light mt-2">
+        <div class="container-fluid ">
+            <div class="row d-flex mt-2">
+                <div class="col-2 ">
+                    <div class="logo_container ms-4 mt-3">
+                        <div class="logo"><img src="../assets/images/logo.png" alt="" style="width: 110px;"></div>
+                    </div>
+                </div>
+                <div class="col-8 ">
+                    <div id="progress" class="">
+                        <div id="progress-bar"></div>
+                        <ul id="progress-num" class="mt-3">
+                            <li class="step active">1 <span class="step-name ">INFO GENERALES</span></li>
+                            <li class="step">2 <span class="step-name ">DESCRIPTION</span></li>
+                            <li class="step">3 <span class="step-name">PRIX ET LIVRAISON</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<section class="vendre">
+    <div class="container">
+        <div class="row">
+
+
+            <div class="mt-4">
+                <h3>INFO PRODUIT</h3>
+
+                <div class="mt-4">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="nom-prod">
+                                <label for="" class=" text-log mb-1 mt-2 ms-3">NOM DU PRODUIT*</label><br>
+                                <div class="input">
+                                    <input type="text" name="nom du produit" class="form-control input-prod">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="descrip-prod col-4">
+
+                            <span>SOYEZ BREF ET N'EMPLOYEZ PAS D'ADJECTIFS APPRÉCIATIFS.</span> <br>
+                            <p>Évitez les termes comme « rare », « exceptionnel », « joli » pour ne pas affecter la
+                                visibilité de votre annonce.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="categorie">
+                                <div class="text-categ" style="width: 90px;">
+                                    <label for="" class=" text-log mb-1 mt-2 ms-3">CATEGORIE*</label>
+                                </div>
+                                <div class="categ" style=" width: 368px;">
+                                    <select class="categ_select " placeholder="CATEGORIE">
+                                        <option value="0">Renseigner une catégories</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="categorie mt-3">
+                                <div class="text-categ" style="width: 90px;">
+                                    <label for="" class=" text-log mb-1 mt-2 ms-3">QUANTITE*</label>
+                                </div>
+                                <div class="categ" style=" width: 368px;">
+                                    <select class="categ_select " placeholder="CATEGORIE">
+                                        <option value="0">Sélectionner une quantité</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="add-photo mt-3">
+                                <div class="fiel-head ">
+                                    <form>
+                                        <header class="mt-2">
+                                            PHOTO DU PRODUIT (MIN. 2)
+                                        </header>
+                                        <fieldset class="mt-2"></fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="continuer mt-4 me-1">
+                                <button id="progress-next" class="btn   btn-continuer"  [routerLink]="['/description-vendre']">PASSER A L'ETAPE 2/3</button>
+                            </div>
+                        </div>
+                        
+                        <div class="col-4 mt-3">
+                            <div class="descrip-prod">
+                                <span>VOS PHOTOS. NOS CONSEILS.</span>
+                                
+                                   <ul>
+                                <li class="mt-2" >Utilisez une lumière naturelle, sans flash.</li> 
+                                   <li class="mt-2">  Montrez le produit en entier, sans rien dessus</li>
+                                   <li class="mt-2" >Multipliez les prises de vue (de dos, de côté...)</li>
+                              
+                                   </ul>
+                            </div>
+                            <div class="modele-image">
+                                <div class="modele">
+                                    <img src="../assets/images/modele-1.webp" style="width:100px;" alt="">
+                                    <span class="mt-1">
+                                        <i class=" g fas fa-times"></i> Raté
+                                    </span>
+                                </div>
+                                <div class="modele">
+                                    <img src="../assets/images/modele-2.webp" style="width:100px; height:145px"
+                                        alt="">
+                                        <span class="mt-1">
+                                            <i class="fas fa-times"></i> Presque
+                                        </span>
+                                    </div>
+                                <div class="modele">
+                                    <img src="../assets/images/modele-3.webp" style="width: 100px;" alt="">
+                                    <span class="mt-1">
+                                       Bravo!
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

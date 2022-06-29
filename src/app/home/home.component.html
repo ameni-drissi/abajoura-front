@@ -1,0 +1,504 @@
+<section class="image-bg text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+    <div class="container text-center">
+      <div class="row align-items-center">
+        <div class="col-12">
+          <h1 class="title-1 text-center"> <span class="text-color text-center">ACHAT, VENTE </span> DE PRODUITS
+            <br>
+            D'OCCASION EN LIGNE
+          </h1>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="switch6 tgd" style="border:1px solid brown;">
+      <label class="switch6-light" onclick="">
+        <input type="checkbox">
+        <span>
+          <span class="span-1 te">JE VEUX ACHETER</span>
+          <span class="span-2">JE VEUX VENDRE</span>
+        </span>
+        <a class="btn-z bgh"></a>
+      </label>
+    </div>
+    <div class="container">
+      <div class=" align-items-center ">
+
+
+      </div>
+    </div>
+    <div class="container ">
+      <div class="row align-items-center mt-5">
+        <div class="col-12">
+          <div>
+            <h1 class="text-center title-2">DECOUVREZ NOS DERNIERS PRODUITS</h1>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container swiper mySwiper cards-product mt-5 mb-5">
+      <div class="product-car ">
+        <div class="ms-4 swiper-wrapper " *ngFor="let item of productList">
+          <div class="card swiper-slide" style="width: 15rem; height: 15rem;">
+            <img src="{{item.image}}" class="card-img-top article-1" alt="..." style=" height: 9rem ;">
+            <div class="card-body ">
+              <div class="align-items-center">
+          <div style="height: 40px;">  <h6 class="card-title text-center">{{item.title}}</h6></div>
+                <div class=" voir text-center "> 
+                  <span class="new-price ">${{item.price}}</span> 
+                  <a href="#" class="btn-z d-flex align-items-center  text-center">Voir le produit</a>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    slidesPerGroup: 3,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
+    <div class="nex">
+      <a href="#" class="previous round">&#8249;</a>
+      <a href="#" class="next round">&#8250;</a>
+    </div>
+  </section>
+  <section class="p-5 bg-sec text-light" style="background-color: #FAF9F9; height: 950px;">
+    <div class="container">
+      <div class="row aling-items-center justify-content-between">
+
+        <div class="col-md p-5">
+          <h1 class="title-pro text-center" style="color: black;"> DÉCOUVREZ NOS PRODUITS D'OCCASION</h1>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row mb-5">
+
+        <div class="col-4 ">
+          <div class="card-pro">
+            <div class="  me-3 mt-3">
+              <img src="assets/images/1.jpg" class="card-img-top  mr-3 mt-lg-3 rounded shadow  taille" alt="...">
+
+            </div>
+            <div class="prod ">
+              <div >
+                <h6 class="mt-3 title-dec "> MEUBLES D'OCCASION</h6>
+              </div>
+             <p class="text-p pt-1">Découvrez nos meubles professionnel qui donneront une ambiance et un style unique à
+                votre intérieur.</p>
+              <a href="#" class="btn btn-with-line d-flex ms-2 text-center align-items-center">Voir les
+                produits</a>
+
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-4 ">
+          <div class="card-pro">
+            <div class=" tai me-3 mt-3">
+              <img src="assets/images/2.jpg" class="card-img-top  mr-3 mt-lg-3 rounded shadow  taille" alt="...">
+
+            </div>
+            <div class="prod ">
+              <h6 class="mt-3 title-dec "> DECO</h6>
+              
+              <p class="text-p  pt-1">Découvrez nos meubles professionnel qui donneront une ambiance et un style unique à
+                votre intérieur.</p>
+              <a href="#" class="btn btn-with-line  d-flex text-center align-items-center">Voir les
+                produits</a>
+
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-4 ">
+          <div class="card-pro">
+            <div class=" tai me-3 mt-3">
+              <img src="assets/images/3.jpg" class="card-img-top  mr-3 mt-lg-3 rounded shadow  taille" alt="...">
+
+            </div>
+            <div class="prod ">
+              <h6 class="mt-3 title-dec "> ELECTRO</h6>
+             
+              <p class="text-p pt-1">Découvrez nos meubles professionnel qui donneront une ambiance et un style unique à
+                votre intérieur.</p>
+              <a href="#" class="btn btn-with-line mt-0 mb-0  d-flex text-center align-items-center">Voir les
+                produits</a>
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row mb-5">
+
+        <div class="col-4 ">
+          <div class="card-pro">
+            <div class=" tai me-3 mt-3">
+              <img src="assets/images/4.jpg" class="card-img-top  mr-3 mt-lg-3 rounded shadow  taille" alt="...">
+
+            </div>
+            <div class="prod ">
+              <h6 class="mt-3 title-dec "> LOISIRS</h6>
+              
+              <p class="text-p pt-1">Découvrez nos meubles professionnel qui donneront une ambiance et un style unique à
+                votre intérieur.</p>
+              <a href="#" class="btn btn-with-line mt-0 mb-0  d-flex text-center align-items-center">Voir les
+                produits</a>
+
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-4 ">
+          <div class="card-pro">
+            <div class=" tai me-3 mt-3">
+              <img src="assets/images/5.jpg" class="card-img-top  mr-3 mt-lg-3 rounded shadow  taille" alt="...">
+
+            </div>
+            <div class="prod ">
+              <h6 class="mt-3 title-dec "> BRICOLAGES</h6>
+              
+              <p class="text-p pt-1">Découvrez nos meubles professionnel qui donneront une ambiance et un style unique à
+                votre intérieur.</p>
+              <a href="#" class="btn btn-with-line mt-0 mb-0  d-flex text-center align-items-center">Voir les
+                produits</a>
+
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-4 ">
+          <div class="card-pro">
+            <div class=" tai me-3 mt-3">
+              <img src="assets/images/6.jpg" class="card-img-top  mr-3 mt-lg-3 rounded shadow  taille" alt="...">
+
+            </div>
+            <div class="prod ">
+              <h6 class="mt-3 title-dec "> KIDS h</h6>
+             
+              <p class="text-p pt-1">Découvrez nos meubles professionnel qui 
+                votre intérieur.</p>
+              <a href="#" class="btn btn-with-line mt-0 mb-0  d-flex text-center align-items-center">Voir les
+                produits</a>
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row mb-5 ">
+
+        <div class="col-4 ">
+          <div class="card-pro">
+            <div class=" tai me-3 mt-3">
+              <img src="assets/images/7.jpg" class="card-img-top  mr-3 mt-lg-3 rounded shadow  taille" alt="...">
+
+            </div>
+            <div class="prod ">
+              <h6 class="mt-3 title-dec "> MULTIMEDIA</h6>
+             
+              <p class="text-p pt-1">Découvrez nos meubles professionnel qui donneront une ambiance et un style unique à
+                votre intérieur.</p>
+              <a href="#" class="btn btn-with-line mt-0 mb-0  d-flex text-center align-items-center">Voir les
+                produits</a>
+
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-4 ">
+          <div class="card-pro">
+            <div class=" tai me-3 mt-3">
+              <img src="assets/images/8.jpg" class="card-img-top  mr-3 mt-lg-3 rounded shadow  taille" alt="...">
+
+            </div>
+            <div class="prod ">
+              <h6 class="mt-3 title-dec "> CULTURE</h6>
+              
+              <p class="text-p pt-1">Découvrez nos meubles professionnel qui donneront une ambiance et un style unique à
+                votre intérieur.</p>
+              <a href="#" class="btn btn-with-line mt-0 mb-0  d-flex text-center align-items-center">Voir les
+                produits</a>
+
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-4 ">
+          <div class="card-pro">
+            <div class=" tai me-3 mt-3">
+              <img src="assets/images/9.jpg" class="card-img-top  mr-3 mt-lg-3 rounded shadow  taille" alt="...">
+
+            </div>
+            <div class="prod ">
+              <h6 class="mt-3 title-dec "> VAISSELLES</h6>
+              
+              <p class="text-p pt-1">Découvrez nos meubles professionnel qui donneront une ambiance et un style unique à
+                votre intérieur.</p>
+              <a href="#" class="btn btn-with-line mt-0 mb-0  d-flex text-center align-items-center">Voir les
+                produits</a>
+
+
+            </div>
+          </div>
+
+        </div>
+        
+      </div>
+    </div>
+
+
+  </section>
+
+  <!--qui est abajoura-->
+  <section class="p-5 bg-sec text-light">
+    <div class="container-fluid definition">
+
+
+      <div class="row ">
+
+        <div class="col-6  ms-4">
+          <h2>QUI EST ABAJOURA?</h2>
+          <div class="ligne"></div>
+          <div class="rte mt-3">
+            <p><strong>Table tulipe, Egg chair, Fauteuil Barcelona, lampe Pipistrello...</strong><br>Un meuble vintage
+              original n’est pas un objet comme les autres.<br><br>C’est une page d’histoire. Une pièce unique de
+              mobilier design vintage. Une création originale, qui par l’ingéniosité de sa conception, la pureté de ses
+              lignes ou la spécificité de ses matières, aura suffisamment marqué son époque pour accéder au statut
+              d'icône, d’œuvre intemporelle.</p>
+            <p>Design Market souhaite redonner au design original sa juste place, et faire apprécier au plus grand
+              nombre le travail accompli par les grands. Cet héritage inestimable, communément appelé «&nbsp;meubles
+              vintage&nbsp;», mais qu'il est plus juste d'appeler «&nbsp;design du 20e siècle&nbsp;».<br><br>Des
+              créations originales de Ray, à celles d’Arne Jacobsen, Harry Bertoia,&nbsp;<strong>notre équipe de
+                chasseurs de trésors a parcouru toute l’Europe à la recherche des plus belles pièces de mobilier design
+                du 20e siècle</strong>, pour les réunir en un lieu unique.</p>
+            <p>Découvrez la plus importante collection en ligne de meubles vintage et icônes du 20e siècle en Europe -
+              <strong>des pièces authentifiées par des experts professionnels indépendants</strong>
+              -&nbsp;<span>maintenant accessibles en ligne et livrées chez vous en quelques clics.</span>
+            </p>
+            <p>Parce que rien ne vaut un meuble vintage original pour conférer un caractère unique à votre décoration,
+              et cultiver l’âme de votre intérieur.</p>
+          </div>
+        </div>
+        <div class="col-6 rond ">
+          <img src="assets/images/vase.jpg" class="im-salon " alt="" style="height: 500px; width: 500px;">
+        </div>
+      </div>
+      </div>
+  </section>
+
+  <!--avis-->
+  <section class="p-5 bg-sec text-light " style="background-color: #FAF9F9; height: 900px;">
+    <div class="container-fluid">
+
+      <div class="   avs ">
+        <h1 class="avs-1">DECOUVREZ LES AVIS </h1>
+        <h1 class="avs-2"> DE NOS CLIENTS</h1>
+
+        <a href="#" class="btn   d-flex text-center align-items-center">VOIR LES AVIS DES CLIENTS</a>
+
+      </div>
+
+      <div class="row">
+        <div class="col-3  info"> <img id="mon-svg" class="info-svg mt-3" src="assets/images/padlock-3089.svg"
+            style="filter: invert(90%) sepia(35%) saturate(5590%) hue-rotate(288deg) brightness(92%) contrast(85%); width: 50px; height: 50px;"
+            alt="">
+          <div class="title-info mt-3">
+            <h6>PAIMENT <br> 100% SECURISE</h6>
+          </div>
+          <div class="info-text mt-2">
+            <p>Réglez en toute confiance</p>
+          </div>
+        </div>
+        <div class="col-3 info ">
+          <img id="mon-svg" class="mt-3" src="assets/images/verified-3600.svg"
+            style="filter: invert(90%) sepia(35%) saturate(5590%) hue-rotate(288deg) brightness(92%) contrast(85%); width: 50px; height: 50px;"
+            alt="">
+          <div class="title-info mt-3">
+            <h6>AUTHENTICITÉ <br>
+              GARANTIE
+            </h6>
+          </div>
+          <div class="info-text mt-2">
+            <p>Mobilier design vintage
+              contrôlé par nos experts
+            </p>
+          </div>
+        </div>
+        <div class="col-3   info">
+          <img id="mon-svg" class="mt-3" src="assets/images/truck-1058.svg"
+            style="filter: invert(90%) sepia(35%) saturate(5590%) hue-rotate(288deg) brightness(92%) contrast(85%); width: 50px; height: 50px;"
+            alt="">
+          <div class="title-info mt-3">
+            <h6>LIVRAISON <br>
+              SUR MESURE
+            </h6>
+          </div>
+          <div class="info-text mt-2">
+            <p>Livraison par transporteurs spécialisés,
+              en France et partout dans le monde
+            </p>
+          </div>
+        </div>
+        <div class="col-3  info">
+          <img id="mon-svg" class="mt-3" src="assets/images/smile-svgrepo-com (1).svg"
+            style="filter: invert(90%) sepia(35%) saturate(5590%) hue-rotate(288deg) brightness(92%) contrast(85%); width: 35px; height: 35px;"
+            alt="">
+          <div class="title-info mt-4">
+            <h6>SATISFAIT OU <br>
+              REMBOURSÉ
+            </h6>
+          </div>
+          <div class="info-text mt-3">
+            <p>14 jours pour retourner votre
+              commande si vous changez d’avis
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!--info-->
+  <footer class="p-5 bg-sec text-light " style=" background-color: #EBEAEA; ">
+    <div class="container">
+      <div class="logo-site">
+        <img src="assets/images/logo.png" alt="" style="width: 230px; height: auto;">
+      </div>
+
+    </div>
+    <div class="container-fluid">
+      <div class="row  mt-5">
+        <div class="col-3 propos">
+          <h6>A PROPOS</h6>
+          <div class="small-ligne"></div>
+          <div class="text-prop">
+            <p>Qui sommes-nous? <br>
+              Avis clients<br>
+              Conditions générales d'utilisation<br>
+              Mentions légales<br>
+              Politique de confidentialité</p>
+          </div>
+        </div>
+        <div class="col-3 propos">
+          <h6>ACHETER</h6>
+          <div class="small-ligne"></div>
+          <div class="text-prop">
+            <p>Compte <br>
+              Avant un achat <br>
+              Livraison <br>
+              Après un achat</p>
+          </div>
+        </div>
+        <div class="col-3 propos">
+          <h6>VENDRE</h6>
+          <div class="small-ligne"></div>
+          <div class="text-prop">
+            <p>Comment vendre <br>
+              Mes annonces <br>
+              Livraison <br>
+              Paiement</p>
+          </div>
+        </div>
+        <div class="col-3 propos">
+          <h6>CONTACT</h6>
+          <div class="small-ligne"></div>
+          <div class="text-prop">
+            <p>Contactez-nous <br>
+              Aide acheteur <br>
+              Aide vendeur</p>
+          </div>
+          <h6 class="mt-4">REGOINEZ LA COMMUNAUTE</h6>
+          <div class="small-ligne"></div>
+          <div class="svg-prop">
+            <img class="mt-3" src="assets/images/facebook-logo-108.svg"
+              style="filter:invert(82%) sepia(25%) saturate(226%) hue-rotate(298deg) brightness(95%) contrast(88%); width: 30px; height: 30px;"
+              alt="">
+            <img class="mt-3" src="assets/images/instagram-logo-3286.svg"
+              style="filter: invert(82%) sepia(25%) saturate(226%) hue-rotate(298deg) brightness(95%) contrast(88%); width: 25px; height: 25px;"
+              alt="">
+            <img class="mt-3" src="assets/images/pinterest-113.svg"
+              style="filter: invert(82%) sepia(25%) saturate(226%) hue-rotate(298deg) brightness(95%) contrast(88%); width: 30px; height: 30px;"
+              alt="">
+            <img class="mt-3" src="assets/images/twitter-svgrepo-com (1).svg"
+              style="filter: invert(82%) sepia(25%) saturate(226%) hue-rotate(298deg) brightness(95%) contrast(88%); width: 30px; height: 30px;"
+              alt="">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="container text-center mt-5">
+      <div class="row mt-5">
+        <div class="col-12 language-selector ">
+          <ul class="language-selector__container">
+            <li class="selector__default">
+              <a href="#" class="selector__event">
+                <span><img src="./assets/images/flag-france.png" style="width: 30px; height: auto;" alt="fr"></span>
+                Français <i class="fa fa-angle-down down"></i>
+              </a>
+            </li>
+
+          </ul>
+
+
+        </div>
+      </div>
+
+    </div>
+   <!--<img src="assets/images/visa-svgrepo-com.svg" style="width: 60px; height: auto;" alt="">
+    <img src="assets/images/mastercard-svgrepo-com.svg" style="width: 60px; height: auto;" alt="">
+    <img src="assets/images/american-express-svgrepo-com.svg" style="width: 60px; height: auto;" alt="">
+    <img class="card-pay" src="assets/images/paypal-svgrepo-com (1).svg" style="width: 60px; height: auto;" alt="">
+  <p>© 2022 Design Market ™ - Tous droits réservés</p>--> 
+    <div class="copyright_bas">
+      <img src="https://www.design-market.fr/themes/simpleresponsivetheme/img/logos_paiements.png"
+        alt="logos paiements">
+      <p>© 2022 ABAJOURA ™ - Tous droits réservés</p>
+    </div>
+  </footer>
+  

@@ -1,0 +1,431 @@
+* {
+    font-family: "Open Sans";
+  }
+  
+#progress {
+    position: relative;
+    margin-bottom: 30px;   
+  }
+  #progress-bar {
+    position: absolute;
+    background: #A64F68;
+    height: 5px;
+    width: 0%;
+    top: 50%;
+    left: 0;
+  }
+  #progress-num {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  #progress-num::before {
+    content: "";
+    background-color: lightgray;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    z-index: -1;
+  }
+  #progress-num .step {
+    border: 3px solid lightgray;
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    line-height: 25px;
+    text-align: center;
+    background-color:#E3BEC6;
+    font-family: sans-serif;
+    font-size: 16px;   
+    color: #A64F68; 
+    position: relative;
+    z-index: 1;
+  }
+  
+  #progress-num .step.active {
+    border-color:#A64F68;
+    background-color: #A64F68;
+    color: #E3BEC6;
+  }
+  .step-name {
+    position: absolute;
+    font-size: 14px;
+    font-family: Open Sans,sans-serif;
+    text-transform: uppercase;
+    width: 80px;
+    font-weight: 500;
+    display: inline-block;
+    line-height: normal;
+    left: -90%;
+    bottom: -28px;
+    font-weight: 700;
+    color:black;
+
+    
+}
+/*****table coordonne*****/
+
+.table-1{
+  width: 580px;
+  height: 180px;
+  border:#e6e6e6 1px solid ;
+  border-radius: 4px;
+  display: table-cell; /* comportement visuel de cellule */
+  vertical-align: middle;
+  background-color: white;
+}
+
+.table-2{
+width: 550px;
+ height: 180px;
+ display: table;
+ margin: auto;
+ border:#e6e6e6 1px solid ;
+ border-radius: 4px;
+ border-style: none none none none;
+
+}
+
+.row-1{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.row-2{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  border-top: 1px solid #e6e6e6;
+}
+.row-3{
+  width: 100%;
+  height: 60px;
+  border-top: 1px solid #e6e6e6;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.col-tab1{
+  width: 100px;
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: #737373;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.col-tab2{
+  width: 350px;
+  font-size: 13px;
+  font-family: "Open Sans"; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.col-tab3{
+  width: 100px;
+  display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.modif-coor{
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  font-family: "Open Sans";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.btn-continuer{
+    
+  margin-top: 10px;
+     border-radius: 0;
+     background-color: #E3BEC6;
+     border: none;
+     height: 50px;
+     width: 200px;
+     color: #000000;
+     font-family: "Open Sans";
+ font-size: 12px;
+ 
+   }
+   .retouner{
+       text-decoration: none;
+       color: black;
+          
+     font-family: 'Tenor Sans', sans-serif;
+   }
+section.paiement{
+    background-color:#efefee;
+    height: 900px;
+    
+    display: flex;
+}
+.partie-paie h3{
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 20px;
+}
+.partie-paie span{
+    font-family: "Open Sans";
+    font-size: 15px;
+}
+::placeholder{
+    font-size: 12px;
+    margin-left: 10px;
+    
+    font-family: "Open Sans";
+}
+
+
+
+
+.num{
+    width: 500px;
+}
+
+.date{
+    width: 250px;
+    
+}
+.card-paie{
+    width: 550px;
+   
+}
+.footer-paie{
+    display: flex;
+    justify-content: flex-start;
+    background-color: white;
+}
+    .header-paie{
+        display: flex;
+        justify-content: flex-start;
+        background-color: white;
+    }
+.num {
+       
+padding: 10px;
+outline: none;
+border: 1px solid #d9d9d9;
+height: 45px;
+border-radius: 4px;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+
+border-radius:4px;
+padding: 0.9285714286em 0.7857142857em;
+word-break: normal;
+line-height: inherit;
+    }
+    .date{
+        width: 240px;
+        padding: 10px;
+outline: none;
+border: 1px solid #d9d9d9;
+height: 45px;
+border-radius: 4px;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+
+border-radius:4px;
+padding: 0.9285714286em 0.7857142857em;
+word-break: normal;
+line-height: inherit;
+margin-right: 10px;
+margin-left:8px ;
+    }
+.body-paie{
+background-color: #F9EEF0;
+    }
+
+.icon-lock{
+padding: 10px;
+        background: white;
+       color: #E3BEC6;
+        min-width: 50px;
+        text-align: center;
+        height: 45px;
+       border-radius: 0px 4px 4px 0px;
+       border: 1px solid #d9d9d9;
+       
+    border-style: solid solid solid none;
+    }
+    .input-field{
+        width: 450px;
+    
+    outline: none;
+    border: 1px solid #d9d9d9;
+height: 45px;
+border-radius: 4px;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+border-style: solid none solid solid;
+border-radius: 4px 0px 0px 4px;
+padding: 0.9285714286em 0.7857142857em;
+word-break: normal;
+line-height: inherit;
+    }
+    .input-container {
+        display: flex;
+        width: 100%;
+       
+    
+      }
+      .icon{
+        
+            padding: 10px;
+                    background: white;
+                   color: #E3BEC6;
+                    min-width: 50px;
+                    text-align: center;
+                    height: 45px;
+                   border-radius: 0px 4px 4px 0px;
+                   border: 1px solid #d9d9d9;
+                   
+                border-style: solid solid solid none;
+                
+      }
+
+      .date-icon{
+        width: 200px;
+    
+        outline: none;
+        border: 1px solid #d9d9d9;
+    height: 45px;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-style: solid none solid solid;
+    border-radius: 4px 0px 0px 4px;
+    padding: 0.9285714286em 0.7857142857em;
+    word-break: normal;
+    line-height: inherit;
+  
+      }
+      .in{
+        display: flex;
+        width: 100%;
+      
+      }
+      .exp{
+        
+      }
+      .date-code{
+        display: flex;
+       align-items: center;
+          
+         
+          
+      }
+      /*****************/
+      .btn-appliquer{
+        background-color: #E3BEC6;
+        text-align: center;
+        display: block;
+        width:90px;
+        height: 45px;
+        border-radius: 4px; 
+        font-size: 13px;
+        text-align: center;
+      }
+      .promo{
+        width: 350px;
+        padding: 10px;
+        outline: none;
+        border: 1px solid #d9d9d9;
+    height: 45px;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    border-radius: 4px;
+    padding: 0.9285714286em 0.7857142857em;
+    word-break: normal;
+    line-height: inherit;
+      }
+      .code-promo{
+        display: flex;
+        justify-content: space-between;
+        width: 490px;
+      }
+      li .borderless  {
+        border-top: 0 none;
+    }
+    .recap{
+      justify-content: end;
+     margin-top: -40px;
+     margin-left: 50px;
+     
+    
+     }
+    .details-items .list-group-item:after {
+      width: 50%;
+      height: 1px;
+      background-color: #efefee;
+      display: block;
+      margin-top: 15px;
+    }
+      .btn-panier{
+        background-color: #E3BEC6;
+        text-align: center;
+        display: block;
+        width: 100%;
+        height: 45px;
+        border-radius: 0;
+        
+      }
+      .list-group p {
+        font-family: "Open Sans";
+        font-size: 20px;
+        font-weight: 100;
+      }
+      .total-exp {
+      
+        display: flex;
+       
+        justify-content: space-between;
+      }
+      .sous{
+       display: flex;
+       flex-direction: column;
+      }
+      .montant-produits{
+        display: flex;
+        justify-content: space-between;
+      }
+      .prix-art{
+        display: flex;
+        justify-content: space-between;
+      }
+      .price{
+        font-family: "Open Sans";
+        font-size: 25px;
+        font-weight: 700;
+      }
+    
+    .img-art{
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+     
+
+    }
+    .table-img{
+      border: lightgray 1px solid;
+   
+      border-radius: 4px;
+      }
+    .nom-art{
+      display: flex;
+      justify-content: flex-start;
+    }

@@ -1,0 +1,168 @@
+<header class="main-header">
+    <nav class="nab vbar-light mt-2">
+        <div class="container-fluid ">
+            <div class="row d-flex mt-2">
+                <div class="col-2 ">
+                    <div class="logo_container ms-4 mt-3">
+                        <div class="logo"><img src="../assets/images/logo.png" alt="" style="width: 110px;"></div>
+                    </div>
+                </div>
+                <div class="col-8 ">
+                    <div id="progress" class="">
+                        <div id="progress-bar"></div>
+                        <ul id="progress-num" class="mt-3">
+                            <li class="step active">1 <span class="step-name ">INFO GENERALES</span></li>
+                            <li class="step">2 <span class="step-name ">DESCRIPTION</span></li>
+                            <li class="step">3 <span class="step-name">PRIX ET LIVRAISON</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<section class="vendre">
+    <div class="container">
+        <div class="row">
+            <div class="mt-4">
+                <h3>DESCRIPTION PRODUIT</h3>
+                <div class="col-12 ">
+                    <div class="prod-poids mt-3">
+                        <label for="" class=" text-log mb-1 mt-2 ms-3">POIDS*</label>
+                        <div class="poids ">
+                            <div class="input-poids">
+                                <div class="dim-cm">
+                                    <label for="affiché" style="padding-right: 50px;"class="label-prix mt-2" >Prix affiché</label>
+                                    <input type="text" name="largeur" class="form-control input-dim">
+                                    <div class="cm text-center"> <span>kg</span> </div>
+                                </div>
+
+                            </div>
+                            <div class="input-poids me-3">
+                                <div class="dim-cm">
+                                    <label for="affiché" style="padding-right: 50px;"class="pour-vous mt-2" >Pour vous</label>
+                                    <input type="text" name="largeur" class="form-control input-dim">
+                                    <div class="cm text-center"> <span>kg</span> </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="negoc mt-3">
+                        <label for="" class=" text-log mb-1 mt-2 ms-3">NEGOCIATION*</label>
+                        <div>
+                            <label class="switch ms-3 mt-3">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                              </label>
+                              <span class="ps-3">J’accepte qu’un client puisse négocier le prix de mon produit.
+
+                            </span>
+                        </div>
+                        <div class="info-reserve">
+                            <label for="" class=" text-log mb-1 mt-3 ms-3">PRIX DE RÉSERVE*</label>
+                            <p class="ms-3">Augmentez vos chances de vendre : toute offre supérieure ou égale à ce prix sera acceptée automatiquement, et ce prix sera visible pour les clients professionnels.</p>
+                        </div>
+                        
+                            <div class="reserve ">
+                                <div class="input-reserve">
+                                    <div class="dim-cm">
+                                        <label for="affiché" style="padding-right: 50px;" class="label-prix mt-2" >Prix de réserve</label>
+                                        <input type="text" name="largeur" class="form-control input-dim">
+                                        <div class="cm text-center"> <span>DT</span> </div>
+                                    </div>
+
+                                </div>
+                                <div class="input-reserve me-3">
+                                    <div class="dim-cm">
+                                        <label for="affiché" style="padding-right: 50px;" class="pour-vous mt-2">Pour vous</label>
+                                        <input type="text" name="largeur" class="form-control input-dim">
+                                        <div class="cm text-center"> <span>DT</span> </div>
+                                    </div>
+
+                                </div>
+                            
+                        </div>
+                    </div>
+            </div>
+            <div class="col-12">
+                <div class="categorie mt-3">
+                    <div class="text-categ">
+                        <label for="" class=" text-log mb-1 mt-2 ms-3">ADRESSE D'ENLEVEMENT*</label>
+                    </div>
+                    <div class="dropdown drop">
+                        <button class="btn btn-adresse categ_select  " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          
+                            Sélectionner une adress
+                        </button>
+                        <i class="arrow right me-2"></i>
+                        <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
+                          <li><button class="btn btn-ajout" data-bs-toggle="modal" data-bs-target="#exampleModal">AJOUTER UNE ADRESSE</button></li>
+                          
+                        </ul>
+                      </div>
+                </div>
+              
+            </div>
+
+        </div>
+       <!--MODAL-->
+       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered  ">
+            <div class="modal-content ">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 title-liv ">AJOUTER UNE NOUVELLE ADRESSE</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div> 
+                <div class="modal-body">
+                    <div class=" fieldset">
+                        <div class="mt-3">
+                            <select size="1" class="field_select " placeholder="Pays/région">
+                                <option value="" disabled selected>Indicatif de pays/ région</option>
+                            </select>
+                        </div>
+                        <div class="field-half">
+                            <div class=" mt-2">
+                                <input placeholder="Prénom" class="field_input_nom " aria-required="true" size="60"
+                                    type="text">
+                            </div>
+                            <div class=" mt-2">
+                                <input placeholder="Nom" class="field_input_nom " aria-required="true" size="60"
+                                    type="text">
+                            </div>
+                        </div>
+                        <div class="mt-2">
+                            <input placeholder="Adresse" class="field__input" aria-required="true" size="60"
+                                type="text">
+                        </div>
+                        <div class="mt-2">
+                            <input placeholder="Appartement, etage, etc. (facultatif)" class="field__input"
+                                aria-required="true" size="60" type="text">
+                        </div>
+                        <div class="mt-2">
+                            <input placeholder="Ville" class="field__input" aria-required="true" size="60" type="text">
+                        </div>
+                        <div class="mt-2">
+                            <input placeholder="Code postal" class="field__input" aria-required="true" size="60"
+                                type="text">
+                        </div>
+                        <div class="mt-2 input-container">
+                            <input placeholder="Téléphone" class=" logo-formulaire input-field " aria-required="true"
+                                size="60" type="text">
+                            <i class="fas fa-question-circle icon "></i>
+                        </div>
+
+                        <div class="continuer me-3 mt-4">
+                            <button id="progress-next" class="btn btn-continuer">AJOUTER ADRESSE</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>

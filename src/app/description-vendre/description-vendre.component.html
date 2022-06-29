@@ -1,0 +1,135 @@
+<header class="main-header">
+    <nav class="nab vbar-light mt-2">
+        <div class="container-fluid ">
+            <div class="row d-flex mt-2">
+                <div class="col-2 ">
+                    <div class="logo_container ms-4 mt-3">
+                        <div class="logo"><img src="../assets/images/logo.png" alt="" style="width: 110px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 ">
+                    <div id="progress" class="">
+                        <div id="progress-bar"></div>
+                        <ul id="progress-num" class="mt-3">
+                            <li class="step active">1 <span class="step-name ">INFO GENERALES</span></li>
+                            <li class="step">2 <span class="step-name ">DESCRIPTION</span></li>
+                            <li class="step">3 <span class="step-name">PRIX ET LIVRAISON</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<section class="vendre">
+    <div class="container">
+        <div class="row">
+            <div class="mt-4">
+                <h3>DESCRIPTION PRODUIT</h3>
+                <div class="mt-4">
+                    <div class="col-12">
+                        <div class="add-photo mt-3">
+                            <div class="fiel-head ">
+                                <form>
+                                    <header class="mt-2">
+                                        DESCRIPTION DU PRODUIT*
+                                    </header>
+                                    <fieldset class="mt-2"></fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="categorie mt-3">
+                            <div class="text-categ" style="width: 90px;">
+                                <label for="" class=" text-log mb-1 mt-2 ms-3">STYLE*</label>
+                            </div>
+                            <div class="categ" style=" width: 368px;">
+                                <select class="categ_select " placeholder="CATEGORIE">
+                                    <option value="0">Sélectionner un style</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-12">
+                        <div class="categorie mt-3">
+                            <div class="text-categ" style="width: 90px;">
+                                <label for="" class=" text-log mb-1 mt-2 ms-3">MATERIAUX*</label>
+                            </div>
+                            <div class="categ" style=" width: 368px;">
+                                <select class="categ_select " placeholder="CATEGORIE">
+                                    <option value="0">Rechercher un matériau</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-12">
+                        <div class="categorie mt-3">
+                            <div class="text-categ" style="width: 90px;">
+                                <label for="" class=" text-log mb-1 mt-2 ms-3">COULEUR*</label>
+                            </div>
+                            <div class="categ" style=" width: 368px;">
+                                <select class="categ_select " placeholder="CATEGORIE">
+                                    <option value="0">Rechercher une couleur</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="prod-dim mt-3">
+                            <label for="" class=" text-log mb-1 mt-2 ms-3">DIMENSIONS*</label>
+                            <div class="nom-prod ">
+                                <div class="input">
+                                    <p>Largeur</p>
+                                    <div class="dim-cm">
+                                        <input type="text" name="largeur" class="form-control input-dim">
+                                        <div class="cm text-center"> <span>cm</span> </div>
+                                    </div>
+
+                                </div>
+                                <div class="input">
+                                    <p>Hauteur</p>
+                                    <div class="dim-cm">
+                                        <input type="text" name="largeur" class="form-control input-dim">
+                                        <div class="cm text-center"> <span>cm</span> </div>
+                                    </div>
+                                </div>
+                                <div class="input">
+                                    <p>Profondeur</p>
+                                    <div class="dim-cm">
+                                        <input type="text" name="largeur" class="form-control input-dim">
+                                        <div class="cm text-center"> <span>cm</span> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 ">
+                        <div class="prod-poids mt-3">
+                            <label for="" class=" text-log mb-1 mt-2 ms-3">POIDS*</label>
+                            <div class="poids ">
+                                <div class="input-poids">
+                                    <div class="dim-cm">
+                                        <input type="text" name="largeur" class="form-control input-dim">
+                                        <div class="cm text-center"> <span>kg</span> </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="continuer mt-4 me-1">
+                        <button id="progress-next" class="btn   btn-continuer" [routerLink]="['/vendre-prix']">PASSER A L'ETAPE 3/3</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

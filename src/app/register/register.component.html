@@ -1,0 +1,136 @@
+<app-navbaar></app-navbaar>
+<section class="section-login p-5">
+    <div class="title-login">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12 mt-5">
+                    <h1>NOUVEAU CLIENT? <br>
+                        INSCRIVEZ-VOUS</h1>
+                </div>
+                <div class="row text-center">
+                    <div class="col-12 ">
+                        <h4 class="mt-4">Inscrivez-vous plus rapidement: <img id="mon-svg" class="ms-2"
+                                src="../assets/images/facebook-svgrepo-com.svg" style=" width: 27px; height: 27px;"
+                                alt=""> </h4>
+                    </div>
+                </div>
+                <div class="switch6 tgd mt-4">
+                    <label class="switch6-light" onclick="">
+                        <input type="checkbox">
+                        <span>
+                            <span class="span-1 ">UN PARTICULIER</span>
+                            <span class="span-1">UN PROFESSIONNEL</span>
+                        </span>
+                        <a class="btn bgh"></a>
+                    </label>
+                </div>
+                <div class=" form-group ">
+                    <ul class="list-inline mt-5">
+                        <li class="list-inline-item civi">CIVILITE</li>
+                        <li class="list-inline-item ">
+                            <div class="form-check custom-control custom-radio ">
+                                <input class="form-check-input custom-control-input rad " type="radio" value="0"
+                                    name="inscription_civilite" autocomplete="inscription_civilite"
+                                    id="inscription_civilite-0">
+                                <label class="form-check-label custom-control-label text-civ "
+                                    for="inscription_civilite-0 ">Madame</label>
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <div class="form-check custom-control custom-radio"><input
+                                    class="form-check-input custom-control-input rad" type="radio" value="1"
+                                    name="inscription_civilite" autocomplete="inscription_civilite"
+                                    id="inscription_civilite-1"><label
+                                    class="form-check-label custom-control-label text-civ"
+                                    for="inscription_civilite-1">Monsieur</label></div>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="container-login ms-5">
+            <div class="container">
+                <div id="login-row" class="row justify-content-center align-items-center ms-5">
+                    <div id="login-column" class="col-md-6">
+                        <div id="login-box" class="col-md-12">
+                            <form [formGroup]="registerForm" (ngSubmit)="register()" class="form align-items-center">
+
+                                <div class="form-group mt- align-items-center">
+                                    <label for="username" class=" text-log ">PRENOM:</label><br>
+                                    <input type="text" name="firstname" id="firstname" class="form-control"
+                                        formControlName="firstname">
+                                    <div *ngIf="firstname.touched && firstname.invalid">
+                                        <small *ngIf="firstname.errors.required" class="text-danger">Firstname is
+                                            required<br></small>
+                                        <small *ngIf="firstname.errors.pattern" class="text-danger">Invalid
+                                            Firstname<br></small>
+                                        <small *ngIf="firstname.errors.minlength" class="text-danger">Firstname must
+                                            contain two characters at least</small>
+                                    </div>
+                                </div>
+                                <div class="form-group mt-3 align-items-center">
+                                    <label for="lastname" class=" text-log">NOM:</label><br>
+                                    <input type="text" name="lastname" id="lastname" class="form-control"
+                                        formControlName="lastname">
+                                    <div *ngIf="lastname.touched && lastname.invalid">
+                                        <small *ngIf="lastname.errors.required" class="text-danger">Lastname is
+                                            required<br></small>
+                                        <small *ngIf="lastname.errors.pattern" class="text-danger">Invalid
+                                            Lastname<br></small>
+                                        <small *ngIf="lastname.errors.minlength" class="text-danger">Lastname must
+                                            contain two characters at least</small>
+                                    </div>
+                                </div>
+                                <div class="form-group mt-3 align-items-center">
+                                    <label for="username" class=" text-log">Email:</label><br>
+                                    <input type="text" name="email" id="exampleInputEmail1" formControlName="email"
+                                        class="form-control">
+                                    <div *ngIf="email.touched && email.invalid">
+                                        <small *ngIf="email.errors.required" class="text-danger">Email is
+                                            required<br></small>
+                                        <small *ngIf="email.errors.email" class="text-danger">Invalid Email<br></small>
+                                    </div>
+                                </div>
+                                <div class="form-group mt-3 align-items-center">
+                                    <label for="username" class=" text-log ">PASSWORD:</label><br>
+                                    <input type="text" name="password" id="exampleInputPassword1"
+                                        formControlName="password" class="form-control">
+                                    <div *ngIf="password.touched && password.invalid">
+                                        <small *ngIf="password.errors.required" class="text-danger">Password is
+                                            required<br></small>
+                                        <small *ngIf="password.errors.minlength" class="text-danger">password must
+                                            contain 6 characters at least</small>
+                                    </div>
+                                </div>
+                                <div class="form-group mt-3 ">
+                                    <label for="CustomerPassword" class="text-log ">CONFIMRER MOT DE PASSE: </label><br>
+                                    <input type="text" name="repassword" id="repeatPassword"
+                                        formControlName="repassword" class="form-control d-flex align-items-center ">
+                                    <div *ngIf="repassword.touched && repassword.invalid">
+                                        <small *ngIf="repassword.errors.required" class="text-danger">Repeat Password is
+                                            required<br></small>
+                                    </div>
+                                    <div *ngIf="repassword.valid && repassword.value != password.value"
+                                        class="text-danger">
+
+                                        <small class="text-danger">The passwords entered do not match<br></small>
+                                    </div>
+                                </div>
+
+                                <div class=" mt-2">
+
+                                    <input type="submit" name="submit" class="btn btn-login btn-md mt-3" [disabled]="registerForm.invalid" value="CREER">
+                                </div>
+                                <div id="register-link" class="text-right">
+                                    <a href="#" class="text-compte">*Champs obligatoires</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

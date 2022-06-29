@@ -1,0 +1,75 @@
+.section-login {
+    margin: 0;
+    padding: 0;
+    background-color: #FAF9F9;
+    height: 100vh;
+}
+
+h1 {
+    color: black;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 30px;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 18px;
+    font-family: "Open Sans";
+}
+
+.form-control {
+    width: 400px;
+}
+
+.btn-login {
+    background-color: #EFCCD3;
+    width: 400px;
+    height: 40px;
+    font-family: "Open Sans";
+    border-radius: 0px;
+    font-weight: lighter;
+    text-align: center;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 13px;
+   
+}
+
+.text-log {
+    color: black;
+    font-size: 13px;
+    font-family: "Open Sans";
+    letter-spacing: 3px;
+    line-height: 50px;
+    font-weight: 500;
+}
+.rappeler {
+    color: #707070;
+    font-size: 11px;
+    font-family: "Open Sans";
+    margin-left: 10px;
+}
+
+.text-reg {
+    margin-left: 140px;
+    font-size: 12px;
+    color: black;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-family: "Open Sans";
+    line-height: 10px;
+    margin-top: 20px;
+}
+
+.text-compte {
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: "Open Sans";
+    line-height: 10px;
+}
+
+.form-control {
+    height: 40px;
+    border-radius: 0;
+}

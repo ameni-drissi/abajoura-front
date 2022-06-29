@@ -1,0 +1,326 @@
+
+/*************/
+.meuble{
+    background-image:url(./../../assets/images/cat-meuble.jpg);
+    height: 350px;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+   
+    }
+    .meuble h1{
+        color: #F9C5D5;
+        font-family:  'Tenor Sans', sans-serif;
+     
+        font-size: 30px;
+        letter-spacing: 3px;
+        line-height: 50px;
+        font-weight: lighter;
+        text-align: ceznter;
+        
+    }
+    .meuble p{
+        color: white;
+        text-align:center;
+        font-size: 18px;
+        font-family: "Open Sans";
+    }
+    
+    .nbre-produit{
+        color: black;
+        font-size: 18px;
+        font-family: "Open Sans";
+    }
+    .filter{
+  background-color: #FAF9F9;
+  height: 1000px;
+    }
+    .affine{
+  background-color: white;
+  width: 330px;
+  box-shadow: 2px 5px 8px -8px 
+  rgba(182, 177, 177, 0.7); 
+  height: 700px;
+  
+    }
+    .tit-fil{
+   height: 45px;
+   box-shadow: -3px 2px 5px 1px rgba(238, 237, 237, 0.7); 
+  border-radius: 5px;
+  color: #000000;
+  text-align: center;
+  display: table; 
+      width: 100%;
+    }
+    .tit-fil h5{
+   
+      font-family:  'Montserrat', sans-serif;
+      font-weight: normal;
+   
+    }
+    .title-affin h6{
+        color: #000000;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        margin-left: 40px;
+       font-family: 'Montserrat', sans-serif;
+       font-size: 20px;
+    }
+    .ren{
+        text-align: end;
+      }
+    .ren a{
+      
+      color: #000000;
+      font-family: "Open Sans";
+      font-size: 15px;
+      text-underline-offset: 5px;
+      text-decoration-color: #7f7f7f;
+      margin-right: 10px;
+      text-decoration-thickness: 2px;
+    }
+    .search-prod{
+        width: 330px;
+      display: block;
+      
+      text-align: center;
+    }
+    .search-prod input{
+      font-family: "Open Sans";
+      border-radius: 0;
+      border: 1px solid;
+      border-color: #efefee;
+      width: 90%;
+      height: calc(1.5em + .75rem + 2px);
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #495057;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid #ced4da;
+     }
+     input::placeholder {
+      text-align:justify;
+      
+    }
+    .categ{
+    width: 330px;
+    display: block;
+    text-align: center;
+  }
+  .categ select{
+      font-family: "Open Sans";
+      border-radius: 0;
+      border: 1px solid;
+      border-color: #efefee;
+      width: 90%;
+      height: calc(1.5em + .75rem + 2px);
+     font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da; 
+  }
+  .ligne-prod{
+      content: "";
+      height: 1px;
+      width: 90%;
+      background: #dee2e6;
+      margin-top: 30px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+  }
+  .filter-box form span{
+      color: #000000;
+      margin-left: 18px;
+      margin-top: 50px;
+  }
+  .filter-box form {
+      width: 100%;   
+  }
+  .prix img{
+    margin-left: 230px;
+      
+  }
+  
+  .dimension img{
+      margin-left: 176px;
+  }
+  .style img{
+      margin-left: 218px;
+  }
+  .mat img{
+      margin-left: 192px;
+  }
+  .coul img{
+      margin-left: 195px;
+  }
+  .plus img{
+      margin-left: 146px;
+  }
+  .btn-filter{
+      display: block;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 0;
+      background-color: #E3BEC6;
+      border: none;
+      height: 50px;
+      width: 200px;
+      color: #000000;
+      
+      font-size: 12px;
+      font-family: "Open Sans";
+  }
+  .btn-avis{
+      background-color: #E3BEC6;
+     width: 200px;
+       border-radius: 35px;
+      margin: auto;
+      display:flex;
+      align-items: center;
+      font-size: 14px;
+      font-family: "Open Sans";
+      margin-top: 8px;
+  }
+  .btn-avis i{
+      height: 10px;
+      width: 10px ;
+      line-height: 35px;
+      font-size: 18px;
+  }
+  .btn-cher{
+      background-color: #E3BEC6;width: 200px; margin: auto;
+      display:flex;
+      align-items: center;
+border-radius: 0;
+      margin-top: 8px;
+      font-size: 14px;
+      font-family: "Open Sans";
+  }
+  
+  
+  .moins-cher span:after {
+      content: "\f0d7";
+      float: right;
+      border: none;
+      font-family: 'FontAwesome';
+      margin-left: 10px;}
+    .avis{
+       margin-right: 300px;
+    }
+    .card-img-top {
+      width: 100%;
+      height: 15vw;
+      object-fit: cover;
+      box-shadow: 1px 2px 3px 4px rgba(204, 202, 202, 0.4);
+      border-radius: 5px;
+  
+  }
+  .btn-achat{
+      background-color: #E3BEC6;
+      border-radius: 0;
+      width: 250px;
+      font-size: 12px;
+      font-family: "Open Sans";
+  }
+  .para{
+      height: 100px;
+  }
+  .scroll-container {
+  height:800px;
+      overflow-y: scroll;
+  
+    }
+    .img-article{
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      box-shadow: 1px 2px 3px 4px rgba(250, 249, 249, 0.4);
+   }
+   .popup{
+       background-color:#FAF9F9;
+       border-radius: 0;
+       border: none;
+   }
+   .title-pop h3{
+      font-family:  'Tenor Sans', sans-serif;
+      font-size: 25px;
+      font-weight: lighter;
+   }
+   .ligne-pop{
+      content: "";
+      height: 1px;
+      width: 100%;
+      background: #A64F68;
+      margin-top: 30px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+   }
+   .ajout-pop{
+       display: block;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: white;
+      border: 1px solid black;
+      border-radius: 0;
+      width: 100%;
+      height: 45px;
+      font-family: "Open Sans";
+      font-size: 12px;
+      letter-spacing: 3px;
+   }
+   .achet-pop{
+      display: block;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #f1dcdc;  
+      border: none;
+      border-radius: 0;
+      width: 100%;
+      height: 45px;
+      font-family: "Open Sans";
+      font-size: 12px;
+      letter-spacing: 3px;
+      font-weight: 400;
+   }
+   .scroll-popup{
+     
+          height:600px;
+              overflow-y: scroll;
+          
+            
+   }
+   .livrai-pop select{
+       width: 100%;
+       font-family: "Open Sans";
+       border-radius: 0;
+       border: 1px solid;
+       border-color: #efefee;
+       height: 45px;
+       font-family: "Open Sans";
+       font-size: 11px;
+       letter-spacing: 3px;
+     
+     color: #495057;
+     background-color: #fff;
+     background-clip: padding-box;
+     border: 1px solid #ced4da; 
+   }
+  .descrip p{
+      font-family: "Open Sans";
+   
+  }
+  .tax p{
+      font-family: "Open Sans";
+   
+  }
